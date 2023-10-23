@@ -3,9 +3,10 @@ $title='شركة مهارة الرقمية للتجارة - الرئيسية';
 ?>
 <!DOCTYPE html>
 <html lang="en">
-    <?php require_once("head.php");?>
+<?php require_once("head.php");?>
+
 <body>
-	<?php require_once("header.php");?>
+    <?php require_once("header.php");?>
     <!-- Carousel Start -->
     <div class="container-fluid mt-5">
         <div class="row px-xl-5">
@@ -17,10 +18,12 @@ $title='شركة مهارة الرقمية للتجارة - الرئيسية';
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item position-relative active" style="height: 560px;">
-                            <img class="position-absolute w-100 h-100" src="../style/img/banners/bannner1.jpg" style="object-fit: cover;">
+                            <img class="position-absolute w-100 h-100" src="../style/img/banners/bannner1.jpg"
+                                style="object-fit: cover;">
                         </div>
                         <div class="carousel-item position-relative" style="height: 560px;">
-                            <img class="position-absolute w-100 h-100" src="../style/img/banners/banner2.jpg" style="object-fit: cover;">
+                            <img class="position-absolute w-100 h-100" src="../style/img/banners/banner2.jpg"
+                                style="object-fit: cover;">
                         </div>
                     </div>
                 </div>
@@ -60,31 +63,32 @@ $title='شركة مهارة الرقمية للتجارة - الرئيسية';
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
     <!-- Featured End -->
     <!-- Categories Start -->
     <div class="container-fluid pt-5 pb-3">
-        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pl-3">الاقسام</span></h2>
+        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span
+                class="bg-secondary pl-3">الاقسام</span></h2>
         <div class="row px-xl-5">
             <?php
             foreach ($catData as $cat) 
             {
-                ?>            
-                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                    <div class="mb-4"> 
-                        <a class="h6 text-decoration-none text-truncate" href="shopCat.php?cat=<?=$cat['id']?>">
-                            <div class="product-item bg-light " style="height: 250px;">
-                                <div class="product-img position-relative overflow-hidden text-center">
-                                    <img class="py-3" src="<?=$cat['pic']?>" alt="" style="height: 200px; width:auto">
-                                </div>
-                                <div class="text-center py-1" style="font-size: 18px;">
-                                        <?=$cat['name_ar']?>
-                                </div>
-                            </div> 
-                        </a>    
-                    </div>
+                ?>
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                <div class="mb-4">
+                    <a class="h6 text-decoration-none text-truncate" href="shopCat.php?cat=<?=$cat['id']?>">
+                        <div class="product-item bg-light " style="height: 250px;">
+                            <div class="product-img position-relative overflow-hidden text-center">
+                                <img class="py-3" src="<?=$cat['pic']?>" alt="" style="height: 200px; width:auto">
+                            </div>
+                            <div class="text-center py-1" style="font-size: 18px;">
+                                <?=$cat['name_ar']?>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <?php
+            </div>
+            <?php
             }
             ?>
         </div>
@@ -93,7 +97,8 @@ $title='شركة مهارة الرقمية للتجارة - الرئيسية';
 
     <!-- Vendor Start -->
     <div class="container-fluid py-5">
-    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pl-3">عملائنا</span></h2>
+        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span
+                class="bg-secondary pl-3">عملائنا</span></h2>
         <div class="row px-xl-5">
             <div class="col">
                 <div class="owl-carousel vendor-carousel">
@@ -112,13 +117,14 @@ $title='شركة مهارة الرقمية للتجارة - الرئيسية';
                     <div class="bg-light p-4 d-flex justify-content-center" style="height: 200px;">
                         <img src="../style/img/clients/Gissah.jpg" alt="" class="align-self-center">
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     </div>
-    
+
     <!-- Vendor End -->
     <?php require_once("footer.php");?>
     <?php require_once("js-src.php");?>
 </body>
+
 </html>
