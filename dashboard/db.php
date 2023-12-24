@@ -4,7 +4,7 @@
 define('HOSTNAME', 'localhost');
 define('DATABASE_USERNAME', 'root');
 define('DATABASE_PASSWORD', '');
-define('DATABASE_NAME', 'mahara_server');
+define('DATABASE_NAME', 'mahara');
 $MySQL_Handle = mysqli_connect(HOSTNAME,DATABASE_USERNAME,DATABASE_PASSWORD,DATABASE_NAME) ;
 if (!$MySQL_Handle) {
     die("Unable to Connect database: " . mysqli_connect_error());

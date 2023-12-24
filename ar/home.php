@@ -33,7 +33,7 @@ $title='شركة مهارة الرقمية للتجارة - الرئيسية';
     <!-- Carousel End -->
 
     <!-- Featured Start -->
-    <div class="container-fluid pt-5">
+    <!--     <div class="container-fluid pt-5">
         <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4">
             <span class="bg-secondary pl-3">الخدمات</span>
         </h2>
@@ -63,7 +63,7 @@ $title='شركة مهارة الرقمية للتجارة - الرئيسية';
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Featured End -->
     <!-- Categories Start -->
     <div class="container-fluid pt-5 pb-3">
